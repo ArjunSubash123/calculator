@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+ <div class="container">
+     <div class="row">
+         <div class="col-4"></div>
+         <div class="col-4">
+             <h1>REGISTER</h1>
+             <div class="border border-primary">
+                 <form method="post">
+                     {%csrf_token%}
+                       <div class="mb-3">
+
+                           <input type="text" placeholder="First name" name="f_name"><br>
+                       </div>
+                      <div class="mb-3">
+
+                      <input type="text" placeholder="Last name" name="l_name"><br>
+                      </div>
+                       <div class="mb-3">
+
+                       <input type="text" placeholder="Email" name="e_mail"><br>
+                       </div>
+                     <div class="mb-3">
+
+                       <input type="text" placeholder="Username" name="u_name"><br>
+                       </div>
+                       <div class="mb-3">
+                       <input type="password" placeholder="Password" name="pwd1"><br>
+                       </div>
+                     <div class="mb-3">
+                       <input type="password" placeholder="Confirm Password" name="pwd2"><br>
+                       </div>
+                       <input type="submit">
+                 </form>
+             </div>
+         </div>
+         <div class="col-4"></div>
+     </div>
+ </div>
+
+
+</body>
+</html>
